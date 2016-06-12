@@ -15,11 +15,11 @@ app.controller('ResponseBoss',function(API ,$scope, $http, localStorageService, 
 	$scope.SendLogin = function(){
 	 	$http({
       method: 'POST',
-      url: 'https://ofd44opsak.execute-api.us-west-2.amazonaws.com/fintech/api-login',
+      url: 'https://ofd44opsak.execute-api.us-west-2.amazonaws.com/fintech/api-registry',
       data: $scope.LoginUser
     }).then(function successCallback(response) {
     	console.log(response)
-      window.location.href = 'http://localhost:8000/frame3.html'
+      window.location.href = 'http://betterboss.co/frame3.html'
       $rootScope.TokenUser = localStorageService.set('token',response.data.token);  
       localStorageService.set('NamePeople',$scope.LoginUser.userName);
     }, function errorCallback(response) {
@@ -29,6 +29,10 @@ app.controller('ResponseBoss',function(API ,$scope, $http, localStorageService, 
 })
 
 app.controller('GetCashData', function($scope,PayBook, $rootScope, $http,localStorageService){
+
+  // Register scope
+  $scope.ShowModal = true;
+  // 
   var NamePeople = function(){
       return localStorageService.get('NamePeople');
   }
@@ -59,5 +63,8 @@ app.controller('GetCashData', function($scope,PayBook, $rootScope, $http,localSt
       }, function errorCallback(response) {
         console.log(response)
       });
+  }
+  $scope.NoThanks = function(){
+      window.location.href = 'http://betterboss.co/dashboard.html'
   }
 })

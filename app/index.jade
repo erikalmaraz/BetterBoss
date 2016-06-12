@@ -16,6 +16,7 @@ body(ng-app='BetterBoss',ng-controller='ResponseBoss' ,class="RegisterScreen")
                 div.TitleBox
                     | Registrate para comenzar a obtener beneficios
                 form 
+                    input(placeholder="Correo Electronico", ng-model="LoginUser.email")
                     input(placeholder="Nombre de usuario", ng-model="LoginUser.userName")
                     input(placeholder="Contraseña",type="password" ,ng-model="LoginUser.password")
                     div.OptionsLogin

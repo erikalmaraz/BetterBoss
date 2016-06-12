@@ -1,16 +1,16 @@
 include ./templates/header.jade
 block ContainerDom
 body(ng-app='BetterBoss',ng-controller='GetCashData' ,class="FrameScreen" , ng-init="GetBankData();GetOperationByAccount();")
-    section.bgModal
+    section.bgModal(ng-show="ShowModal")
 
-    section.RegisterModal
+    section.RegisterModal(ng-show="ShowModal")
         div.PersonLogo
             img(src='./assets/images/eljefazo.png')
         div.CloudWithText
             p.TitleCloud
                 | ¡Bienvenido {{NamePeople}}!
             p.DescriptionCloud
-                | Para integrarte a mi staff y recibir beneficios personalizados, primero necesito unos ultimos datos.
+                | ¿Puedo hacerte un analisis de tus finanzas para sugerirte un paquete de beneficios a la medida?
             form
                 div.SelectBank
                     select
@@ -20,6 +20,10 @@ body(ng-app='BetterBoss',ng-controller='GetCashData' ,class="FrameScreen" , ng-i
                             | Test1
                     input(type="text" , placeholder="Nombre de usuario")
                     input(type="password" , placeholder="Contraseña")
+                    button.ItsOk(ng-click="ShowModal = false")
+                        | ¡Hazme mi analisis!
+                    button.NoBtn(ng-click="NoThanks();")
+                        | ¡No, Gracias!
     section.BackOfRegister
         section.frame3
             header

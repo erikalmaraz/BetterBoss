@@ -263,7 +263,7 @@ i.fa-home {
   background-repeat: no-repeat;
   width: 100%;
   max-width: 1210px;
-  min-height: 755px;
+  min-height: 835px;
   background-size: 100% 100%;
   float: right;
   margin-top: -10px;
@@ -417,6 +417,18 @@ i.fa-home {
   padding: 5px 25px;
   width: 300px;
   box-shadow: 0 0 3px #E55E1C; }
+
+.CloudWithText button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  background: #3DA4C5;
+  color: #fff;
+  border: 0;
+  padding: 7px 8px;
+  width: 300px;
+  font-family: 'helsinki';
+  font-size: 17px; }
 
 /*Generic Classes*/
 .inline {
