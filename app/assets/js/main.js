@@ -67,4 +67,8 @@ app.controller('GetCashData', function($scope,PayBook, $rootScope, $http,localSt
   $scope.NoThanks = function(){
       window.location.href = 'http://betterboss.co/dashboard.html'
   }
+  $scope.GoToDashboard = function(){
+      window.location.href = 'http://betterboss.co/SecondStep.html'
+  }
+
 })

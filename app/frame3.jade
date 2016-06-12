@@ -64,3 +64,8 @@ body(ng-app='BetterBoss',ng-controller='GetCashData' ,class="FrameScreen" , ng-i
                         | {{item.description}}
                     div.Mount.inline
                         | {{item.amount}}
+        section.GoToDashboard
+            p ¿Estas de acuerdo?
+
+            button(ng-click="GoToDashboard();")
+                | ¡Sí! Continuemos

@@ -1,0 +1,80 @@
+include ./templates/header.jade
+block ContainerDom
+body(ng-app='BetterBoss',ng-controller='GetCashData' ,class="FrameScreen" , ng-init="GetBankData();GetOperationByAccount();")
+
+    section.BackOfRegister
+        section.frame3
+            header
+                .LogoSmall
+                    img(src="./assets/images/logoletras.png")
+                nav
+                    a(href="#")
+                        | Faq
+                    a(href="#")
+                        | Contact
+                    a(href="#")
+                        i(class="fa fa-home" aria-hidden="true")
+
+        section.UserQuestions
+            div.StepsRegister
+                img(src='./assets/images/botonespasos2.png')
+            div.YourCash.SecondStep
+                | La cantidad que te recomendamos destinar a tu paquete de beneficios
+            div.SLiderMoney
+                img(src="./assets/images/slider.png")
+        section.CustomizeServices
+            .TitleCustomize
+                | Ahora, personaliza tu paquete
+            div.ServiceBox.inline
+                .TitleService
+                    | Seguro de gastos medicos
+                .ImgService.inline
+                    input(type="checkbox")
+                    img(src="./assets/images/jeringa.png")
+                .Description.inline
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut finibus enim, et feugiat ipsum. Sed vestibulum urna id luctus viverra. Pellentesque non neque tortor.
+            div.ServiceBox.inline
+                .TitleService
+                    | Seguro de gastos medicos
+                .ImgService.inline
+                    input(type="checkbox")
+                    img(src="./assets/images/jeringa.png")
+                .Description.inline
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut finibus enim, et feugiat ipsum. Sed vestibulum urna id luctus viverra. Pellentesque non neque tortor.
+            div.ServiceBox.inline
+                .TitleService
+                    | Seguro de gastos medicos
+                .ImgService.inline
+                    input(type="checkbox")
+                    img(src="./assets/images/jeringa.png")
+                .Description.inline
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut finibus enim, et feugiat ipsum. Sed vestibulum urna id luctus viverra. Pellentesque non neque tortor.
+            div.ServiceBox.inline
+                .TitleService
+                    | Seguro de gastos medicos
+                .ImgService.inline
+                    input(type="checkbox")
+                    img(src="./assets/images/jeringa.png")
+                .Description.inline
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut finibus enim, et feugiat ipsum. Sed vestibulum urna id luctus viverra. Pellentesque non neque tortor.
+            div.ServiceBox.inline
+                .TitleService
+                    | Seguro de gastos medicos
+                .ImgService.inline
+                    input(type="checkbox")
+                    img(src="./assets/images/jeringa.png")
+                .Description.inline
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut finibus enim, et feugiat ipsum. Sed vestibulum urna id luctus viverra. Pellentesque non neque tortor.
+            div.ServiceBox.inline
+                .TitleService
+                    | Seguro de gastos medicos
+                .ImgService.inline
+                    img(src="./assets/images/jeringa.png")
+                .Description.inline
+                    p
+                          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut finibus enim, et feugiat ipsum. Sed vestibulum urna id luctus viverra. Pellentesque non neque tortor.

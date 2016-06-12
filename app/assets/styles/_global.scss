@@ -432,6 +432,84 @@ i.fa-home{
     font-family: 'helsinki';
     font-size: 17px;
 }
+.YourCash.SecondStep{
+	border: 0;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'helsinki';
+    color: #4393C8;
+    max-width: 600px;
+}
+.SLiderMoney{
+	text-align: center;
+}
+.SLiderMoney img{
+	max-width: 700px;
+    margin-top: 15px;
+}
+.TitleCustomize{
+	font-size: 18px;
+    color: #666;
+    font-family: 'helsinki';
+}
+.CustomizeServices{
+	max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'helsinki';
+    margin-top: 50px;
+}
+.CustomizeServices{
+	.ServiceBox{
+	    margin-left: 0;
+	    margin-top: 20px;
+	    margin-right: 45px;
+		.ImgService{
+		    border: 4px solid #10BCDC;
+		    height: 75px;
+		    min-width: 123px;
+		    img{
+			    width: 75px;
+			    float: right;
+			    margin-top: 0px;
+		    }
+		}
+		input[type="checkbox"]{
+			margin-top: 30px;
+    		margin-left: 20px;
+		}
+		.Description p{
+		    margin-left: 137px;
+		    font-size: 13px;
+		    line-height: 15px;
+		    margin-top: -42px;
+		}
+		.TitleService{
+			background: none;
+		    color: #2DB0C4;
+		    font-size: 20px;
+		    margin-left: 137px;
+		    position: absolute;
+		}
+	}
+}
+.GoToDashboard{
+	color: #3D92BB;
+	font-family: 'helsinki' ;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    p{
+    	font-size: 20px;   	
+    }
+    button{
+	    color: #fff;
+	    background: #3CA2D2;
+	    border: 0;
+	    padding: 6px 8px;
+	    width: 200px;
+    }
+}
 /*Generic Classes*/ 
 .inline{
 	display: inline-block;

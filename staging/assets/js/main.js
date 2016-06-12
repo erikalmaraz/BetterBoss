@@ -19,7 +19,7 @@ app.controller('ResponseBoss',function(API ,$scope, $http, localStorageService, 
       data: $scope.LoginUser
     }).then(function successCallback(response) {
     	console.log(response)
-      window.location.href = 'http://betterboss.co/frame3.html'
+      window.location.href = 'http://localhost:8000/frame3.html'
       $rootScope.TokenUser = localStorageService.set('token',response.data.token);  
       localStorageService.set('NamePeople',$scope.LoginUser.userName);
     }, function errorCallback(response) {
@@ -65,6 +65,10 @@ app.controller('GetCashData', function($scope,PayBook, $rootScope, $http,localSt
       });
   }
   $scope.NoThanks = function(){
-      window.location.href = 'http://betterboss.co/dashboard.html'
+      window.location.href = 'http://localhost:8000/dashboard.html'
   }
+  $scope.GoToDashboard = function(){
+      window.location.href = 'http://localhost:8000/SecondStep.html'
+  }
+
 })
