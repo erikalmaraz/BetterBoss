@@ -1,0 +1,339 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(141deg, #3DC2E3 22%, #33B3DA 51%, #29A3CC 77%);
+}
+body.FrameScreen{
+	background: #fff;
+}
+header{
+	background: #25AAE2;
+	width: 100%;
+	height: 53px;
+}
+header a {
+    color: #fff;
+    font-family: 'gotham';
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    border-right: 2px solid #fff;
+    font-size: 14px;
+}
+header a:nth-child(1), header a:nth-child(2){
+    position: relative;
+    bottom: 3px;
+}
+header a:last-of-type{
+	border-right: 0;
+}
+nav{
+    text-align: right;
+    position: relative;
+    top: 15px;
+}
+.LogoLogin{
+	text-align: center;
+}
+.LogoLogin img {
+    max-width: 865px;
+    width: 100%;
+    margin-left: -80px;
+    margin-top: -45px;
+}
+.BoxLogin{
+    background-color: #F5F0EA;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 5px;
+}
+.BoxLogin .TitleBox{
+    text-transform: uppercase;
+    font-family: 'helsinki';
+    font-size: 20px;
+    font-weight: normal;
+    padding: 25px 15px;
+}
+.BoxLogin form input{
+    line-height: normal;
+    background-color: #C8E2E3;
+    border: 0;
+    outline: 0;
+    margin-top: 10px;
+    width: 60%;
+    color: #333;
+    padding: 8px 30px;
+    border-radius: 2px;
+}
+.BoxLogin form input:first-of-type{
+    background-size: 40px;
+    background-image: url("../images/usuario.png");
+    background-repeat: no-repeat;
+    background-position: -4px;
+}
+.BoxLogin form input:last-of-type{
+    background-size: 40px;
+    background-image: url("../images/descarga.png");
+    background-repeat: no-repeat;
+    background-position: -4px;
+}
+.OptionsLogin button{
+    background: #1E9ACB;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 10px 32px;
+    border-radius: 1px;
+    position: relative;
+    right: 32px;
+}
+.OptionsLogin .Help{
+	color: #666;
+    font-size: 14px;
+}
+.OptionsLogin .RememberMe input{
+	float: left;
+    margin-left: -29px;
+    position: relative;
+    top: 17px;
+}
+.OptionsLogin .RememberMe span{
+	position: relative;
+    font-size: 14px;
+    color: #666;
+    top: 1px;
+}
+.IRegister{
+    background-color: #F5660A;
+    color: #733810;
+    font-family: 'helsinki';
+    padding: 1px;
+    margin-top: 17px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+i.fa-home{
+    font-size: 28px;
+}
+/*Frame 3  styles*/
+.frame3 header{
+	height: 75px;
+    background: linear-gradient(141deg, #3DC2E3 22%, #33B3DA 51%, #29A3CC 77%);
+}
+.frame3 nav{
+	float: right;
+}
+.LogoSmall img{
+	width: 145px;
+    margin-top: -6px;
+    margin-left: 30px;
+
+}
+.LogoSmall{
+	display: inline-block;
+}
+.Albricias{
+	background: linear-gradient(141deg, #29A3CC 22%, #33B3DA 51%, #3DC2E3 77%);
+    height: 200px;
+    margin-top: -45px;
+    text-align: center;
+}
+.Albricias .TitleAlbricias{
+	color: #BDE3EC;
+    font-size: 45px;
+    font-family: 'helsinki';
+    position: relative;
+    top: 25px;
+}
+.Albricias .DescriptionAlbricias{
+	font-family: 'helsinki';
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+    max-width: 589px;
+}
+.StepsRegister{
+	text-align: center;
+}
+.StepsRegister img{
+	max-width: 866px;
+    width: 100%;
+}
+.YourCash{
+	width: 100%;
+    border: 6px solid #32A5D9;
+    margin: 0 auto;
+    max-width: 842px;
+}
+.YourCash p{
+	color: #4493BF;
+    font-size: 30px;
+    font-family: 'helsinki';
+    padding: 0 30px;
+    position: relative;
+    left: 50px;
+}
+.YourCash div{
+	float: right;
+}
+.YourCash input{
+	width: 300px;
+    text-align: center;
+    margin-top: 29px;
+    padding: 7px 20px;
+    margin-right: 34px;
+    background: #E4F3FA;
+}
+.GetOutCash{
+	color: #6F6F71;
+    font-size: 26px;
+    font-family: 'helsinki';
+    padding: 0 30px;
+    position: relative;
+    text-align: center;
+}
+.GetOutCash input{
+	background: #E4F3FA;
+    font-family: 'gotham';
+    font-size: 21px;
+    padding: 2px 17px;
+    position: relative;
+    bottom: 3px;
+    color: #f00;
+    font-weight: normal;
+}
+.TableContainer{
+    margin: 0 auto;
+    max-width: 540px;
+    width: 100%;
+}
+.TableContainer .Mount{
+	float: right;
+    width: 20%;
+    text-align: center;
+    border-left: 3px solid #32A5D9;
+    height: 30px;
+    padding: 10px 0 0 0;
+    margin-top: -10px;
+}
+.TitleTableStyle{
+	color: #959595;
+	text-transform: uppercase;
+}
+.InOneLine{
+	border-bottom: 3px solid #28A6D8;
+    padding: 10px;
+    text-align: center;
+    font-family: 'gotham';
+}
+.TitleCloud{
+    text-align: center;
+    margin-top: 205px;
+    font-family: 'helsinki';
+    color: #F86B35;
+    font-size: 42px;
+}
+/*Register Modal*/
+.RegisterModal{
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	height: 100vh;
+}
+.bgModal{
+	position: fixed;
+	z-index: 1;
+	background-color: rgba(0,0,0,.5);
+	width: 100%;
+	height: 100vh;
+}
+.RegisterModal .PersonLogo img{
+	position: absolute;
+    bottom: 0;
+    width: 965px;
+}
+.RegisterModal .CloudWithText{
+	background-image: url("../images/globo.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 1210px;
+    min-height: 755px;
+    background-size: 100% 100%;
+    float: right;
+    margin-top: -10px;
+    margin-right: 0;
+}
+.TitleCloud{
+	text-align: center;
+	margin-top: 205px;
+	font-family: 'helsinki';
+	color: #F86B35;
+	font-size: 42px;
+}
+.DescriptionCloud{
+	text-align: center;
+    margin-top: 0;
+    font-family: 'helsinki';
+    color: #706963;
+    max-width: 500px;
+    font-size: 22px;
+    margin: 0 auto;
+    position: relative;
+    left: 4%;
+}
+.CloudWithText form{
+	position: relative;
+    text-align: center;
+    margin-left: 11%;
+}
+.CloudWithText form select{
+    width: 350px;
+    margin-top: 20px;
+    border: 0;
+    padding: 7px;
+    background: #C5E3E3;
+    color: #8DA7A4;
+    font-family: gotham;
+    text-transform: uppercase;
+}
+.SelectBank input{
+	display: block;
+    margin: 0 auto;
+    line-height: normal;
+    background-color: #C8E2E3;
+    border: 0;
+    outline: 0;
+    margin-top: 10px;
+    color: #333;
+    padding: 8px 30px;
+    max-width: 236px;
+    border-radius: 2px;
+    width: 100%;
+}
+.SelectBank input:first-of-type{
+	background-size: 40px;
+    background-image: url("../images/usuario.png");
+    background-repeat: no-repeat;
+    background-position: -4px;
+}
+.SelectBank input:last-of-type{
+	background-size: 40px;
+    background-image: url("../images/descarga.png");
+    background-repeat: no-repeat;
+    background-position: -4px;
+}
+/*Generic Classes*/ 
+.inline{
+	display: inline-block;
+}
+/*Place holder*/
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #5D7170;
+}

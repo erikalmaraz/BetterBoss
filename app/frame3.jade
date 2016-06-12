@@ -1,0 +1,62 @@
+include ./templates/header.jade
+block ContainerDom
+body(ng-app='BetterBoss',ng-controller='GetCashData' ,class="FrameScreen" , ng-init="GetBankData();GetOperationByAccount();")
+    section.bgModal
+
+    section.RegisterModal
+        div.PersonLogo
+            img(src='./assets/images/eljefazo.png')
+        div.CloudWithText
+            p.TitleCloud
+                | ¡Bienvenido Pocholo Godinez!
+            p.DescriptionCloud
+                | Para integrarte a mi staff y recibir beneficios personalizados, primero necesito unos ultimos datos.
+            form
+                div.SelectBank
+                    select
+                        option
+                            | ¿Cual es tu banco?
+                        option
+                            | Test1
+                    input(type="text" , placeholder="Nombre de usuario")
+                    input(type="password" , placeholder="Contraseña")
+    section.BackOfRegister
+        section.frame3
+            header
+                .LogoSmall
+                    img(src="./assets/images/logoletras.png")
+                nav
+                    a(href="#")
+                        | Faq
+                    a(href="#")
+                        | Contact
+                    a(href="#")
+                        i(class="fa fa-home" aria-hidden="true")
+        section.Albricias
+            p.TitleAlbricias
+                ¡Albricias!
+            p.DescriptionAlbricias
+                | Tu cuenta bancaria a sido enlazada exitosamente, ahora solo necesitas confirmar tus datos
+        section.UserQuestions
+            div.StepsRegister
+                img(src='./assets/images/botonespasos1jsjd.png')
+            div.YourCash
+                p.inline
+                    | Tus Ingresos son de:
+                div.inline
+                    input(type="text" , placeholder="Ingresa tu sueldo")
+            div.GetOutCash
+                p
+                    | Y de eso estas gastando <input type="text" value="12.000" ng-model="TotalGasto" disabled> en:
+        section.TableMount
+            div.TableContainer
+                div.InOneLine.TitleTableStyle
+                    div.Concept.inline
+                        | Concepto
+                    div.Mount.inline
+                        | Monto
+                div.InOneLine(ng-repeat="item in Operations")
+                    div.Concept.inline
+                        | {{item.description}}
+                    div.Mount.inline
+                        | {{item.amount}}

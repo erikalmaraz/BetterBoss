@@ -1,0 +1,32 @@
+include ./templates/header.jade
+block ContainerDom
+body(ng-app='BetterBoss',ng-controller='ResponseBoss' ,class="RegisterScreen")
+        header
+            nav
+                a(href="#")
+                    | Faq
+                a(href="#")
+                    | Contact
+                a(href="#")
+                    i(class="fa fa-home" aria-hidden="true")
+        section.LoginBlock
+            div.LogoLogin
+                img(src="./assets/images/logo.png")
+            div.BoxLogin
+                div.TitleBox
+                    | Registrate para comenzar a obtener beneficios
+                form 
+                    input(placeholder="Nombre de usuario", ng-model="LoginUser.userName")
+                    input(placeholder="Contraseña", ng-model="LoginUser.password")
+                    div.OptionsLogin
+                        button.inline(ng-click="SendLogin();")
+                            | Login
+                        div.RememberMe.inline
+                            input(type="checkbox")
+                            span
+                                | Recordar
+                        div.Help.inline
+                            ¿Necesitas <br> Ayuda?
+                    div.IRegister
+                        p 
+                            | Ya estoy registrado

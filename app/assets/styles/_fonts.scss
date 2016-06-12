@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('./fonts/GothamRounded-Book.eot');
+    src: url('./fonts/GothamRounded-Book.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/GothamRounded-Book.woff') format('woff'),
+        url('./fonts/GothamRounded-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'helsinki';
+    src: url('./fonts/helsinki-webfont.eot');
+    src: url('./fonts/helsinki-webfont.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/helsinki-webfont.woff') format('woff'),
+        url('./fonts/helsinki.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

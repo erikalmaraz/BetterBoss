@@ -1,0 +1,21 @@
+{
+  "name": "gulp-first",
+  "version": "1.0.0",
+  "description": "Gulp Wireframe",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "*",
+    "gulp-sass": "*",
+    "gulp-size": "*",
+    "gulp-jade": "*"
+  },
+  "devDependencies": {
+    "gulp-connect": "*",
+    "gulp-plumber": "*"
+  }
+}
