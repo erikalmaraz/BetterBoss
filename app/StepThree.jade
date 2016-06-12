@@ -1,0 +1,5 @@
+include ./templates/header.jade
+block ContainerDom
+body(ng-app='BetterBoss',ng-controller='GetCashData' ,class="LastFrame" , ng-init="GetBankData();GetOperationByAccount();")
+    button(ng-click="NoThanks();")
+        | Mis beneficios estan listos 

@@ -70,5 +70,27 @@ app.controller('GetCashData', function($scope,PayBook, $rootScope, $http,localSt
   $scope.GoToDashboard = function(){
       window.location.href = 'http://betterboss.co/SecondStep.html'
   }
-
+  $scope.ThanksRedirect = function(){
+      window.location.href = 'http://betterboss.co/StepThree.html' 
+  }
 })
+
+/*Jquery */
+
+$(document).ready(function(){
+  $('#GastosMedicos').change(function(){
+    $(this).parent().parent().toggleClass('maybe')
+  });
+  $('#SeguroVida').change(function(){
+    $(this).parent().parent().toggleClass('maybe')
+  });
+  $('#CajaAhorro1').change(function(){
+    $(this).parent().parent().toggleClass('maybe')
+  });
+  $('#CajaAhorro2').change(function(){
+    $(this).parent().parent().toggleClass('maybe')
+  });
+  $('#Gimnasio').change(function(){
+    $(this).parent().parent().toggleClass('maybe')
+  });
+});

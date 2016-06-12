@@ -29,52 +29,47 @@ body(ng-app='BetterBoss',ng-controller='GetCashData' ,class="FrameScreen" , ng-i
                 .TitleService
                     | Seguro de gastos medicos
                 .ImgService.inline
-                    input(type="checkbox")
+                    input#GastosMedicos(type="checkbox", checked)
                     img(src="./assets/images/jeringa.png")
                 .Description.inline
                     p
                         | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut finibus enim, et feugiat ipsum. Sed vestibulum urna id luctus viverra. Pellentesque non neque tortor.
             div.ServiceBox.inline
                 .TitleService
-                    | Seguro de gastos medicos
+                    | Seguro de vida
                 .ImgService.inline
-                    input(type="checkbox")
-                    img(src="./assets/images/jeringa.png")
+                    input#SeguroVida(type="checkbox" , checked)
+                    img(src="./assets/images/corazon.png")
                 .Description.inline
                     p
                         | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut finibus enim, et feugiat ipsum. Sed vestibulum urna id luctus viverra. Pellentesque non neque tortor.
             div.ServiceBox.inline
                 .TitleService
-                    | Seguro de gastos medicos
+                    | Caja ahorro corto plazo
                 .ImgService.inline
-                    input(type="checkbox")
-                    img(src="./assets/images/jeringa.png")
+                    input#CajaAhorro1(type="checkbox", checked)
+                    img(src="./assets/images/puerco1.png")
                 .Description.inline
                     p
                         | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut finibus enim, et feugiat ipsum. Sed vestibulum urna id luctus viverra. Pellentesque non neque tortor.
-            div.ServiceBox.inline
+            div.ServiceBox.inline.maybe
                 .TitleService
-                    | Seguro de gastos medicos
+                    | Caja ahorro largo plazo
                 .ImgService.inline
-                    input(type="checkbox")
-                    img(src="./assets/images/jeringa.png")
+                    input#CajaAhorro2(type="checkbox")
+                    img(src="./assets/images/puerco2.png")
                 .Description.inline
                     p
                         | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut finibus enim, et feugiat ipsum. Sed vestibulum urna id luctus viverra. Pellentesque non neque tortor.
-            div.ServiceBox.inline
+            div.ServiceBox.inline.maybe
                 .TitleService
-                    | Seguro de gastos medicos
+                    | Gimnasio
                 .ImgService.inline
-                    input(type="checkbox")
-                    img(src="./assets/images/jeringa.png")
+                    input#Gimnasio(type="checkbox")
+                    img(src="./assets/images/pesa.png")
                 .Description.inline
                     p
                         | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut finibus enim, et feugiat ipsum. Sed vestibulum urna id luctus viverra. Pellentesque non neque tortor.
-            div.ServiceBox.inline
-                .TitleService
-                    | Seguro de gastos medicos
-                .ImgService.inline
-                    img(src="./assets/images/jeringa.png")
-                .Description.inline
-                    p
-                          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut finibus enim, et feugiat ipsum. Sed vestibulum urna id luctus viverra. Pellentesque non neque tortor.
+        section.ImReady
+            button(ng-click="ThanksRedirect();")
+                |   ¡Estoy listo!   
