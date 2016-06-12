@@ -21,13 +21,19 @@ app.controller('ResponseBoss',function(API ,$scope, $http, localStorageService, 
     	console.log(response)
       window.location.href = 'http://localhost:8000/frame3.html'
       $rootScope.TokenUser = localStorageService.set('token',response.data.token);  
+      localStorageService.set('NamePeople',$scope.LoginUser.userName);
     }, function errorCallback(response) {
     	console.log(response)
     });
 	}
 })
 
-app.controller('GetCashData', function($scope,PayBook, $rootScope, $http){
+app.controller('GetCashData', function($scope,PayBook, $rootScope, $http,localStorageService){
+  var NamePeople = function(){
+      return localStorageService.get('NamePeople');
+  }
+  $scope.NamePeople = NamePeople();
+
   $rootScope.ClassBody = 'GetCashData';
   $scope.GetBankData = function(){
       $http({
