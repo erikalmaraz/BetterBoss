@@ -329,6 +329,97 @@ i.fa-home{
     background-repeat: no-repeat;
     background-position: -4px;
 }
+/*Dashboard*/
+
+.DashboardScreen .frame3 header{
+	background: linear-gradient(141deg, #39BDDE 22%, #33B3DA 51%, #29A3CC 77%);
+}
+.DashboardScreen .LogoSmall{
+	float: right;
+    margin-top: -77px;
+}
+.DashboardScreen header nav{
+	margin-right: 145px;
+    margin-top: 4px;
+}
+.WelcomeMessage{
+	float: left;
+    color: #fff;
+    font-family: 'gotham';
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-left: 33px;
+}
+.ServiceBox{
+    width: 45%;
+    background-color: #fff;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.BlockOfServices{
+	width: 80%;
+    margin: 0 auto;
+    max-width: 1090px;
+}
+.TitleService{
+	text-align: center;
+	padding-top: 3px;
+    color: #fff;
+    background: #EF6421;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-family: 'helsinki';
+}
+.ImgService{
+	max-width: 120px;
+    border-right: 4px solid #EF6421;
+}
+.ImgService img{
+	width: 110px;
+}
+.ServiceBox .Description{
+	max-height: 78px;
+}
+.ServiceBox .Description p{
+    font-family: 'gotham';
+    font-size: 15px;
+    line-height: 10px;
+    position: relative;
+    top: -19px;
+    margin-left: 20px;
+    color: #707072;
+}
+.ServiceBox .Description span{
+	margin-left: 5px;
+    color: #6FCDE3;
+}
+.BlockOfServices .YourServices{
+	text-align: center;
+    color: #fff;
+    font-family: 'helsinki';
+    font-size: 30px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+.ChangeServicesKit{
+	text-align: center;
+    color: #fff;
+    font-family: 'helsinki';
+    font-size: 25px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+.ChangeServicesKit button{
+	background: #E55E1C;
+    border: 0;
+    font-size: 20px;
+    padding: 5px 25px;
+    width: 300px;
+    box-shadow: 0 0 3px #E55E1C;
+}
 /*Generic Classes*/ 
 .inline{
 	display: inline-block;

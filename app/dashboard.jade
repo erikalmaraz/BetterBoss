@@ -1,0 +1,120 @@
+include ./templates/header.jade
+block ContainerDom
+body(ng-app='BetterBoss',ng-controller='GetCashData' ,class="DashboardScreen" , ng-init="GetBankData();GetOperationByAccount();")
+    section.BackOfRegister
+        section.frame3
+            header
+                .WelcomeMessage
+                    ¡Hola , Pocholo Godinez!
+                nav
+                    a(href="#")
+                        | Faq
+                    a(href="#")
+                        | Contact
+                    a(href="#")
+                        i(class="fa fa-home" aria-hidden="true")
+               .LogoSmall
+                    img(src="./assets/images/logoletras.png")
+        section.BlockOfServices
+            div.YourServices
+                | Estos son tus beneficios laborales actuales.
+            div.ServiceBox.inline
+                .TitleService
+                    | Seguro de gastos medicos
+                .ImgService.inline
+                    img(src="./assets/images/jeringa.png")
+                .Description.inline
+                    p
+                        | Tipo de cobertura:
+                        span 
+                            | Amplia
+
+                    p
+                        | Vigente hasta:
+                        span
+                            | 12/09/2016
+                    p
+                        | Poliza numero:
+                        span
+                            | 15689109           
+            div.ServiceBox.inline
+                .TitleService
+                    | Seguro de vida
+                .ImgService.inline
+                    img(src="./assets/images/corazon.png")
+                .Description.inline
+                    p
+                        | Tipo de cobertura:
+                        span 
+                            | Amplia
+
+                    p
+                        | Vigente hasta:
+                        span
+                            | 12/09/2016
+                    p
+                        | Poliza numero:
+                        span
+                            | 15689109           
+
+            div.ServiceBox.inline
+                .TitleService
+                    | Caja de ahorro a corto plazo
+                .ImgService.inline
+                    img(src="./assets/images/puerco1.png")
+                .Description.inline
+                    p
+                        | Tu ahorro actual:
+                        span 
+                            | 34,980.00
+
+                    p
+                        | Tu rendimiento:
+                        span
+                            |   2.45% a 20 dias 
+                    p
+                        | Tu aportacion mensual:
+                        span
+                            | $1,500.00 
+
+
+            div.ServiceBox.inline
+                .TitleService
+                    | Caja de ahorro a corto plazo
+                .ImgService.inline
+                    img(src="./assets/images/puerco1.png")
+                .Description.inline
+                    p
+                        | Tu ahorro actual:
+                        span 
+                            | 34,980.00
+
+                    p
+                        | Tu rendimiento:
+                        span
+                            |   2.45% a 20 dias 
+                    p
+                        | Tu aportacion mensual:
+                        span
+                            | $1,500.00 
+
+            div.ServiceBox.inline
+                .TitleService
+                    | Gimnasio
+                .ImgService.inline
+                    img(src="./assets/images/jeringa.png")
+                .Description.inline
+                    p
+                        | Tu plan:
+                        span 
+                            | Black
+
+                    p
+                        | Membresia:
+                        span
+                            | 7 meses de 12
+        section.ChangeServicesKit
+            p
+                ¿Quieres cambiar algo en tu plan de beneficios?
+            button
+                | Click Aquí

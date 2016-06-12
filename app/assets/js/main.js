@@ -19,6 +19,7 @@ app.controller('ResponseBoss',function(API ,$scope, $http, localStorageService, 
       data: $scope.LoginUser
     }).then(function successCallback(response) {
     	console.log(response)
+      window.location.href = 'http://localhost:8000/frame3.html'
       $rootScope.TokenUser = localStorageService.set('token',response.data.token);  
     }, function errorCallback(response) {
     	console.log(response)
