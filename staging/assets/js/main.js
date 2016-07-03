@@ -29,6 +29,29 @@ app.controller('GetSendCtrl',function(API ,$scope, $http, $rootScope){
       }
     }
     //
+    var EigthQuestionMulti = [];
+    var checkboxesEight = document.getElementsByName('checkbox8');
+    for (var i=0, n=checkboxesEight.length;i<n;i++) {
+      if (checkboxesEight[i].checked) {
+        checkboxesEight.push(checkboxesEight[i].value);
+      }
+    }
+    //
+    var ElevenQuestionMulti = [];
+    var checkboxesEleven = document.getElementsByName('checkbox11');
+    for (var i=0, n=checkboxesEleven.length;i<n;i++) {
+      if (checkboxesEleven[i].checked) {
+        ElevenQuestionMulti.push(checkboxesEleven[i].value);
+      }
+    }
+    var TSixQuestionMulti = [];
+    var checkboxesTSix = document.getElementsByName('checkbox26');
+    for (var i=0, n=checkboxesTSix.length;i<n;i++) {
+      if (checkboxesTSix[i].checked) {
+        TSixQuestionMulti.push(checkboxesTSix[i].value);
+      }
+    }
+    //
     $http({
       method: 'POST',
       url: API + '/ragna/rest/saveAnswers',
@@ -102,7 +125,7 @@ app.controller('GetSendCtrl',function(API ,$scope, $http, $rootScope){
                    "questionId":"8",
                    "answerds":[  
                       {
-                         "¿Que Prestaciones has contratado por tu cuenta? Elige todas las que apliquen?":$('#Question8').find('input[type="radio"]:checked').val()
+                         "¿Que Prestaciones has contratado por tu cuenta? Elige todas las que apliquen?": EigthQuestionMulti
                       }
                    ]
                 },
@@ -111,7 +134,7 @@ app.controller('GetSendCtrl',function(API ,$scope, $http, $rootScope){
                    "questionId":"9",
                    "answerds":[  
                       {  
-                         "¿Cuanto pagas, aproximadamente, por cada una de las prestaciones que has contratado? " :$('#Question9').find('input[type="radio"]:checked').val()
+                         "¿Cuanto pagas, aproximadamente, por cada una de las prestaciones que has contratado? " : $('#Question9').find('input[type="radio"]:checked').val()
                       }
                    ]
                 },
@@ -120,7 +143,7 @@ app.controller('GetSendCtrl',function(API ,$scope, $http, $rootScope){
                    "questionId":"10",
                    "answerds":[  
                       {  
-                         "Seguro de Gastos Medicos Mayores":"Muy Importante"
+                         "De las prestaciones que contrataste, en general ¿Qué tan satisfech@ estás?" :  $('#Question10').find('input[type="radio"]:checked').val()
                       }
                    ]
                 },
@@ -129,7 +152,7 @@ app.controller('GetSendCtrl',function(API ,$scope, $http, $rootScope){
                    "questionId":"11",
                    "answerds":[  
                       {  
-                         "Seguro de Gastos Medicos Mayores":"Muy Importante"
+                         "¿Cuanto pagas, aproximadamente, por cada una de las prestaciones que has contratado? " : ElevenQuestionMulti
                       }
                    ]
                 },
@@ -138,7 +161,7 @@ app.controller('GetSendCtrl',function(API ,$scope, $http, $rootScope){
                    "questionId":"12",
                    "answerds":[  
                       {  
-                         "Seguro de Gastos Medicos Mayores":"Muy Importante"
+                         "¿QUÉ prestaciones, ademas de las que ya tienes o has contratado, TE GUSTARÍA TENER? " :$('#Question12').find('input[type="radio"]:checked').val()
                       }
                    ]
                 },
@@ -147,7 +170,7 @@ app.controller('GetSendCtrl',function(API ,$scope, $http, $rootScope){
                    "questionId":"13",
                    "answerds":[  
                       {  
-                         "Seguro de Gastos Medicos Mayores":"Muy Importante"
+                         "Por qué no has contratado cada una de los siguientes servicios? Indica la razón más importante para cada uno":$('#Question13').find('input[type="radio"]:checked').val()
                       }
                    ]
                 },
@@ -156,7 +179,7 @@ app.controller('GetSendCtrl',function(API ,$scope, $http, $rootScope){
                    "questionId":"14",
                    "answerds":[  
                       {  
-                         "Seguro de Gastos Medicos Mayores":"Muy Importante"
+                         "Cuanto estarías dispuesto a pagar, aproximadamente, por cada una de esas prestaciones?":$('#Question14').find('input[type="radio"]:checked').val()
                       }
                    ]
                 },
@@ -165,7 +188,7 @@ app.controller('GetSendCtrl',function(API ,$scope, $http, $rootScope){
                    "questionId":"15",
                    "answerds":[  
                       {  
-                         "Seguro de Gastos Medicos Mayores":"Muy Importante"
+                         "Idealmente, ¿que porcentaje de tu ingreso total consideras adecuado destinar a recibir las prestaciones que quieres?":$('#Question15').find('input[type="radio"]:checked').val()
                       }
                    ]
                 },
@@ -174,7 +197,7 @@ app.controller('GetSendCtrl',function(API ,$scope, $http, $rootScope){
                    "questionId":"16",
                    "answerds":[  
                       {  
-                         "Seguro de Gastos Medicos Mayores":"Muy Importante"
+                         "Estás dado de alta en el IMSS?":$('#Question16').find('input[type="radio"]:checked').val()
                       }
                    ]
                 },
@@ -183,7 +206,7 @@ app.controller('GetSendCtrl',function(API ,$scope, $http, $rootScope){
                    "questionId":"17",
                    "answerds":[  
                       {  
-                         "Seguro de Gastos Medicos Mayores":"Muy Importante"
+                         "Por que motivo no te has dado de alta en el IMSS? Elige la razón más importante" : $('#Question17').find('input[type="radio"]:checked').val()
                       }
                    ]
                 },
@@ -192,7 +215,7 @@ app.controller('GetSendCtrl',function(API ,$scope, $http, $rootScope){
                    "questionId":"18",
                    "answerds":[  
                       {  
-                         "Seguro de Gastos Medicos Mayores":"Muy Importante"
+                         "Cuanto estarías dispuesto a pagar por este servicio?":$('#Question18').find('input[type="radio"]:checked').val()
                       }
                    ]
                 },
@@ -201,7 +224,7 @@ app.controller('GetSendCtrl',function(API ,$scope, $http, $rootScope){
                    "questionId":"19",
                    "answerds":[  
                       {  
-                         "Seguro de Gastos Medicos Mayores":"Muy Importante"
+                         "Que tan importantes son para ti cada una de las siguientes prestaciones:":$('#Question19').find('input[type="radio"]:checked').val()
                       }
                    ]
                 },
@@ -210,7 +233,7 @@ app.controller('GetSendCtrl',function(API ,$scope, $http, $rootScope){
                    "questionId":"20",
                    "answerds":[  
                       {  
-                         "Seguro de Gastos Medicos Mayores":"Muy Importante"
+                         "¿Edad?" : $('#Question20').find('input[type="radio"]:checked').val()
                       }
                    ]
                 },
@@ -219,7 +242,7 @@ app.controller('GetSendCtrl',function(API ,$scope, $http, $rootScope){
                    "questionId":"21",
                    "answerds":[  
                       {  
-                         "Seguro de Gastos Medicos Mayores":"Muy Importante"
+                         "sexo?":$('#Question21').find('input[type="radio"]:checked').val()
                       }
                    ]
                 },
@@ -228,7 +251,7 @@ app.controller('GetSendCtrl',function(API ,$scope, $http, $rootScope){
                    "questionId":"22",
                    "answerds":[  
                       {  
-                         "Seguro de Gastos Medicos Mayores":"Muy Importante"
+                         "estado civil?":$('#Question22').find('input[type="radio"]:checked').val()
                       }
                    ]
                 },
@@ -237,7 +260,7 @@ app.controller('GetSendCtrl',function(API ,$scope, $http, $rootScope){
                    "questionId":"23",
                    "answerds":[  
                       {  
-                         "Seguro de Gastos Medicos Mayores":"Muy Importante"
+                         "hijos?":$('#Question23').find('input[type="radio"]:checked').val()
                       }
                    ]
                 },
@@ -246,7 +269,97 @@ app.controller('GetSendCtrl',function(API ,$scope, $http, $rootScope){
                    "questionId":"24",
                    "answerds":[  
                       {  
-                         "Seguro de Gastos Medicos Mayores":"Muy Importante"
+                         "Cuál es tu rango de ingreso mensual?":$('#Question24').find('input[type="radio"]:checked').val()
+                      }
+                   ]
+                },
+                {  
+                   "questionName":"importantBenefits",
+                   "questionId":"25",
+                   "answerds":[  
+                      {  
+                         "¿Cuántos empleados trabajan en tu empresa?":$('#Question25').find('input[type="radio"]:checked').val()
+                      }
+                   ]
+                },
+                {  
+                   "questionName":"importantBenefits",
+                   "questionId":"26",
+                   "answerds":[  
+                      {  
+                         "Tienes empleados en sistema de remuneración mixta? (remuneración mixta es el esquema de pago con bonos de productividad, participaciones de utilidad, apoyos o vales de despensa y otros conceptos que usualmente son integrados al salario del empleado)": $('#Question27').find('input[type="radio"]:checked').val()
+                      }
+                   ]
+                },
+                {  
+                   "questionName":"importantBenefits",
+                   "questionId":"27",
+                   "answerds":[  
+                      {  
+                         "Seguro de Gastos Medicos Mayores": TSixQuestionMulti
+                      }
+                   ]
+                },
+                {  
+                   "questionName":"importantBenefits",
+                   "questionId":"28",
+                   "answerds":[  
+                      {  
+                         "Seguro de Gastos Medicos Mayores": $('#Question28').find('input[type="radio"]:checked').val()
+                      }
+                   ]
+                },
+                {  
+                   "questionName":"importantBenefits",
+                   "questionId":"29",
+                   "answerds":[  
+                      {  
+                         "Seguro de Gastos Medicos Mayores": $('#Question29').find('input[type="radio"]:checked').val()
+                      }
+                   ]
+                },
+                {  
+                   "questionName":"importantBenefits",
+                   "questionId":"30",
+                   "answerds":[  
+                      {  
+                         "Seguro de Gastos Medicos Mayores": $('#Question30').find('input[type="radio"]:checked').val()
+                      }
+                   ]
+                },
+                {  
+                   "questionName":"importantBenefits",
+                   "questionId":"31",
+                   "answerds":[  
+                      {  
+                         "Seguro de Gastos Medicos Mayores": $('#Question31').find('input[type="radio"]:checked').val()
+                      }
+                   ]
+                },
+                {  
+                   "questionName":"importantBenefits",
+                   "questionId":"32",
+                   "answerds":[  
+                      {  
+                         "Seguro de Gastos Medicos Mayores": $('#Question32').find('input[type="radio"]:checked').val()
+                      }
+                   ]
+                },
+                {  
+                   "questionName":"importantBenefits",
+                   "questionId":"33",
+                   "answerds":[  
+                      {  
+                         "Seguro de Gastos Medicos Mayores": $('#Question33').find('input[type="radio"]:checked').val()
+                      }
+                   ]
+                },
+                {  
+                   "questionName":"importantBenefits",
+                   "questionId":"34",
+                   "answerds":[  
+                      {  
+                         "Seguro de Gastos Medicos Mayores": $('#Question34').find('input[type="radio"]:checked').val()
                       }
                    ]
                 }
