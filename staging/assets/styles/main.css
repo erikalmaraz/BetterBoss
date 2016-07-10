@@ -71,6 +71,11 @@ body {
   margin-top: 45px;
   width: 200px; }
 
+.LabelAndCheck input[type="number"] {
+  padding: 6px;
+  width: 100%;
+  float: left; }
+
 @font-face {
   font-family: 'Gotham';
   src: url("./fonts/GothamRounded-Book.eot");

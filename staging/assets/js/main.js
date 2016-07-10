@@ -8,7 +8,13 @@ app.controller('MainCtrl', function($scope, $rootScope){
 })
 
 app.controller('GetSendCtrl',function(API ,$scope, $http, $rootScope){
-	$scope.GetQuestions = function(){
+	$scope.LastQuestion = false;
+  $scope.IsLast = function(){
+    if ($(this).parent().find('.LabelAndCheck input').attr('name') == '35') {
+      console.log('Test123');
+    }
+  }
+  $scope.GetQuestions = function(){
 	 	$http({
       method: 'GET',
       url: API + '/ragna/rest/questionList'
@@ -230,46 +236,46 @@ app.controller('GetSendCtrl',function(API ,$scope, $http, $rootScope){
                 },
                 {  
                    "questionName":"importantBenefits",
-                   "questionId":"20",
+                   "questionId":"100",
                    "answerds":[  
                       {  
-                         "¿Edad?" : $('#Question20').find('input[type="radio"]:checked').val()
+                         "¿Edad?" : $('#Question100').find('input[type="radio"]:checked').val()
                       }
                    ]
                 },
                 {  
                    "questionName":"importantBenefits",
-                   "questionId":"21",
+                   "questionId":"101",
                    "answerds":[  
                       {  
-                         "sexo?":$('#Question21').find('input[type="radio"]:checked').val()
+                         "¿sexo?":$('#Question101').find('input[type="radio"]:checked').val()
                       }
                    ]
                 },
                               {  
                    "questionName":"importantBenefits",
-                   "questionId":"22",
+                   "questionId":"102",
                    "answerds":[  
                       {  
-                         "estado civil?":$('#Question22').find('input[type="radio"]:checked').val()
+                         "¿estado civil?":$('#Question102').find('input[type="radio"]:checked').val()
                       }
                    ]
                 },
                 {  
                    "questionName":"importantBenefits",
-                   "questionId":"23",
+                   "questionId":"103",
                    "answerds":[  
                       {  
-                         "hijos?":$('#Question23').find('input[type="radio"]:checked').val()
+                         "hijos?":$('#Question103').find('input[type="radio"]:checked').val()
                       }
                    ]
                 },
                 {  
                    "questionName":"importantBenefits",
-                   "questionId":"24",
+                   "questionId":"104",
                    "answerds":[  
                       {  
-                         "Cuál es tu rango de ingreso mensual?":$('#Question24').find('input[type="radio"]:checked').val()
+                         "¿Cuál es tu rango de ingreso mensual?":$('#Question104').find('input[type="radio"]:checked').val()
                       }
                    ]
                 },
@@ -278,7 +284,7 @@ app.controller('GetSendCtrl',function(API ,$scope, $http, $rootScope){
                    "questionId":"25",
                    "answerds":[  
                       {  
-                         "¿Cuántos empleados trabajan en tu empresa?":$('#Question25').find('input[type="radio"]:checked').val()
+                         "¿Cuántos empleados trabajan en tu empresa?": $('#Question25').find('input[type="radio"]:checked').val()
                       }
                    ]
                 },
@@ -287,7 +293,7 @@ app.controller('GetSendCtrl',function(API ,$scope, $http, $rootScope){
                    "questionId":"26",
                    "answerds":[  
                       {  
-                         "Tienes empleados en sistema de remuneración mixta? (remuneración mixta es el esquema de pago con bonos de productividad, participaciones de utilidad, apoyos o vales de despensa y otros conceptos que usualmente son integrados al salario del empleado)": $('#Question27').find('input[type="radio"]:checked').val()
+                         "Tienes empleados en sistema de remuneración mixta? (remuneración mixta es el esquema de pago con bonos de productividad, participaciones de utilidad, apoyos o vales de despensa y otros conceptos que usualmente son integrados al salario del empleado)": TSixQuestionMulti
                       }
                    ]
                 },
@@ -296,7 +302,7 @@ app.controller('GetSendCtrl',function(API ,$scope, $http, $rootScope){
                    "questionId":"27",
                    "answerds":[  
                       {  
-                         "Seguro de Gastos Medicos Mayores": TSixQuestionMulti
+                         "¿CUÁNTO ESTARÍAS DISPUESTO A PAGAR POR ESTE SERVICIO?": $('#Question27').find('input[type="number"]').val()
                       }
                    ]
                 },
@@ -305,7 +311,7 @@ app.controller('GetSendCtrl',function(API ,$scope, $http, $rootScope){
                    "questionId":"28",
                    "answerds":[  
                       {  
-                         "Seguro de Gastos Medicos Mayores": $('#Question28').find('input[type="radio"]:checked').val()
+                         "¿Qué tan de acuerdo estas con las siguientes afirmaciones?": $('#Question28').find('input[type="radio"]:checked').val()
                       }
                    ]
                 },
@@ -314,43 +320,7 @@ app.controller('GetSendCtrl',function(API ,$scope, $http, $rootScope){
                    "questionId":"29",
                    "answerds":[  
                       {  
-                         "Seguro de Gastos Medicos Mayores": $('#Question29').find('input[type="radio"]:checked').val()
-                      }
-                   ]
-                },
-                {  
-                   "questionName":"importantBenefits",
-                   "questionId":"30",
-                   "answerds":[  
-                      {  
-                         "Seguro de Gastos Medicos Mayores": $('#Question30').find('input[type="radio"]:checked').val()
-                      }
-                   ]
-                },
-                {  
-                   "questionName":"importantBenefits",
-                   "questionId":"31",
-                   "answerds":[  
-                      {  
-                         "Seguro de Gastos Medicos Mayores": $('#Question31').find('input[type="radio"]:checked').val()
-                      }
-                   ]
-                },
-                {  
-                   "questionName":"importantBenefits",
-                   "questionId":"32",
-                   "answerds":[  
-                      {  
-                         "Seguro de Gastos Medicos Mayores": $('#Question32').find('input[type="radio"]:checked').val()
-                      }
-                   ]
-                },
-                {  
-                   "questionName":"importantBenefits",
-                   "questionId":"33",
-                   "answerds":[  
-                      {  
-                         "Seguro de Gastos Medicos Mayores": $('#Question33').find('input[type="radio"]:checked').val()
+                         "Que tan de acuerdo estas con las siguientes afirmaciones": $('#Question29').find('input[type="radio"]:checked').val()
                       }
                    ]
                 },
